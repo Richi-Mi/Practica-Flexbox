@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fuente:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(90, 6, 38)
+}
+.container{
+    width: 90vw;
+    margin: 10px auto;
+    background-color:rgb(104, 105, 105);
+    display: flex;
+
+    flex-flow: row wrap;
+}
+/*----------- Navegacion ----------*/
+.navegacion{
+    flex: 1 1 100%;
+    background: #fff;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navegacion .icono span{
+    font-family: var(--fuente);
+    font-size: 2rem;
+    line-height: 90px;
+}
+.navegacion .icono img{
+    vertical-align: top;
+    width: 90px;
+    border-radius: 50%;
+}
+.navegacion .lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navegacion .lista a{
+    padding: 10px;
+    background-color: rgb(97, 13, 86);
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: var(--fuente);
+    font-size: 1.2rem;
+
+    flex-grow: 1;
+}
+.lista a:hover{
+    background-color: rgb(117, 27, 98);
+}
+.lista a:active{
+    background-color: rgb(157, 47, 128);
+}
+/*---------------Principal-------------*/
+.news{
+    flex: 1 1 70%;
+    background-color: rgba(230, 236, 240, 0.972);
+    padding: 10px;
+}
+.noticias,
+.deportes{
+    margin-bottom: 10px;
+}
+.notice .title-notice{
+    font-family: var(--fuente);
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(97, 13, 86);
+}
+.notice p{
+    text-align: justify;
+    font-family: var(--fuente);
+    font-size: 17px;
+}
+/* ---------- Lateral -----------*/
+.right{
+    flex: 1 1 30%;
+    background-color: rgb(240, 146, 39);
+}
+.lateral{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.lateral .widjet{
+    margin: 10px;
+    flex: 1 1 20%;
+    height: 90px;
+    background-color: rgb(200, 126, 20);
+}
+/*-------- aside ----------*/
+.aside{
+    flex: 1 1 100%;
+    background-color: azure;
+    text-align: center;
+}
+.aside .legend{
+    font-family: var(--fuente);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
